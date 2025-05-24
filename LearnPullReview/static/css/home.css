@@ -1,0 +1,34 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    /* Light blue-gray background */
+}
+
+.benefit-item h2 {
+    transition: color 0.3s ease;
+}
+
+.benefit-item .benefit-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.benefit-item .benefit-content.expanded {
+    max-height: 500px;
+    /* Adjust as needed for content */
+    padding-top: 1rem;
+    /* Equivalent to mt-4 */
+    padding-bottom: 1rem;
+    /* Equivalent to mb-4 */
+}
+
+.benefit-item .arrow {
+    transition: transform 0.3s ease;
+}
+
+.benefit-item .arrow.rotated {
+    transform: rotate(90deg);
+}
